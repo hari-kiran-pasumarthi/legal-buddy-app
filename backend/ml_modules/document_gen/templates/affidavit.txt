@@ -1,0 +1,8 @@
+AFFIDAVIT
+
+I, {{ name }}, aged {{ age }} years, residing at {{ address }}, do hereby solemnly affirm and declare as under:
+
+{{ statement }}
+
+Date: {{ date }}
+Signature: ____________

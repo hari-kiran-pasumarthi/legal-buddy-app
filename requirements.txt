@@ -1,0 +1,21 @@
+fastapi
+uvicorn
+
+# ML and NLP
+scikit-learn
+pandas
+numpy
+joblib
+
+# Optional NLP tools
+nltk
+spacy
+
+# For document generation if used
+jinja2
+
+# HTTP requests (if needed inside Python code)
+requests
+
+# CORS for FastAPI (optional but recommended)
+fastapi[all]

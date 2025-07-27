@@ -1,0 +1,30 @@
+# ml_modules/document_gen/generator.py
+
+import os
+from datetime import datetime
+
+TEMPLATES_PATH = os.path.join(os.path.dirname(__file__), "templates")
+
+def generate_document(doc_type: str, details: str) -> str:
+    template_map = {
+        "affidavit": "affidavit.txt",
+        "power_of_attorney": "power_of_attorney.txt",
+        "rental_agreement": "rental_agreement.txt",
+    }
+
+    if doc_type not in template_map:
+        return f"Document type '{doc_type}' is not supported."
+
+    try:
+        with open(os.path.join(TEMPLATES_PATH, template_map[doc_type]), 'r') as file:
+            template = file.read()
+    except FileNotFoundError:
+        return f"Template for '{doc_type}' not found."
+
+    try:
+        # Convert the detail string to dictionary
+        detail_dict = eval(details)  # Use `ast.literal_eval` for security in production
+        detail_dict.setdefault("date", datetime.now().strftime("%d-%m-%Y"))
+        return template.format(**detail_dict)
+    except Exception as e:
+        return f"Error filling template: {str(e)}"

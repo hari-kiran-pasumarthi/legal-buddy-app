@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\backend",
+    "\\backend\\chatbot",
+    "\\backend\\document_gen",
+    "\\database",
+    "\\frontend"
+  ],
+  "SelectedNode": "\\backend\\chatbot\\bot.py",
+  "PreviewInSolutionExplorer": false
+}

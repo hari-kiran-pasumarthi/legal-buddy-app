@@ -4,7 +4,7 @@ uvicorn[standard]==0.30.6
 
 # Data & ML essentials
 numpy==1.26.4
-pandas==2.2.2
+pandas==2.2.3
 scikit-learn==1.5.1
 joblib==1.4.2
 

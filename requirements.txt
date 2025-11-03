@@ -1,45 +1,41 @@
 # Core framework
-fastapi==0.115.2
-uvicorn[standard]==0.32.0
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
 
-# Data and ML essentials
-numpy>=2.1.0
-pandas==2.2.3
-scikit-learn==1.5.2
+# Data & ML essentials
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
 joblib==1.4.2
 
-# NLP + Text Processing
+# NLP + Text
 nltk==3.9.1
-spacy==3.8.2
-transformers==4.46.2
-sentence-transformers==3.2.1
+spacy==3.7.4
+transformers==4.43.3
+sentence-transformers==3.1.0
 
-# Database + Vector Store
-chromadb==0.5.23
+# Vector DB + LangChain
+chromadb==0.5.3
+langchain==0.2.14
+langchain-community==0.2.14
+langchain-core==0.2.33
 
-# LangChain ecosystem
-langchain==0.3.11
-langchain-community==0.3.11
-langchain-core==0.3.24
-
-# Document parsing and generation
+# Document parsing
 python-docx==1.1.2
 PyPDF2==3.0.1
 
-# Utility libraries
+# Utils
 requests==2.32.3
-pydantic==2.9.2
+pydantic==2.8.2
 typing-extensions==4.12.2
 tqdm==4.66.5
 
-# Audio / Speech (optional, if voice input is used)
+# Optional modules
 SpeechRecognition==3.10.4
 pydub==0.25.1
-
-# For future vector reasoning / scraping modules
 beautifulsoup4==4.12.3
-httpx==0.27.2
+httpx==0.27.0
 
-# Optional for testing + dev
-pytest==8.3.3
-python-multipart==0.0.12
+# Build/runtime fixes
+setuptools>=65.5.0
+wheel
